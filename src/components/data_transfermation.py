@@ -115,11 +115,11 @@ class DataTransformation:
                 obj = preprocessing_obj
 
             )
-
             # train_path =os.makedirs(os.path.dirname(self.data_transformation_config.preprocesser_obj_file_path_train) , exist_ok=True)
             # preprocessed_train_data = train_arr.to_ssv(train_path)
             # test_path = os.makedirs(os.path.dirname(self.data_transformation_config.preprocesser_obj_file_path_test) , exist_ok= True)
             # preprocessed_test_data = test_arr.to_csv(test_path)
+
 
             return(
                 train_arr,

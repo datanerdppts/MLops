@@ -10,6 +10,9 @@ import sys
 from src.components.data_transfermation import DataTransformationConfig
 from src.components.data_transfermation import DataTransformation
 
+from src.components.model_trainer import ModelTrainerconfig
+from src.components.model_trainer import ModelTrainier
+
 
 
 @dataclass
@@ -56,4 +59,8 @@ if __name__ == "__main__":
 
 
     obj_1 = DataTransformation()
-    obj_1.initate_data_transforming(train_data , test_data)
+    train_arr ,test_arr,_ = obj_1.initate_data_transforming(train_data , test_data)
+
+
+    obj3 = ModelTrainier()
+    pred = obj3.initate_model_trainer(train_arr , test_arr)
